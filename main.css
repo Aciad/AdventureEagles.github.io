@@ -1,14 +1,18 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.nav {
-    list-style-type: none;
-    overflow: hidden;
-    display: flex;
+nav {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+}
+nav img {
+  width: 50px;
+  height: 50px;
 }
 ul {
-    float: right;
+  float: right;
 }
 ul li {
   float: right;
