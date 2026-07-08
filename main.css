@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #192532;
+  --secondary-color: #9c2732;
+  --text-color: #fffded;
+  --accent1-color: #be9c4b;
+  --accent2-color: #437597;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,21 +13,23 @@ nav {
   list-style-type: none;
   overflow: hidden;
   display: flex;
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 nav img {
   width: 50px;
   height: 50px;
-
 }
 ul {
   float: right;
+  list-style-type: none;
 }
 ul li {
   float: right;
 }
 ul li a {
   display: block;
-  color: black;
+  color: var(--text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -30,18 +39,17 @@ ul li a:hover {
 }
 
 .activity-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 .activity-card-one {
-    grid-column: 1 / 2;
+  grid-column: 1 / 2;
 }
 .activity-card-two {
-    grid-column: 2 / 3;
+  grid-column: 2 / 3;
 }
 .activity-card img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
