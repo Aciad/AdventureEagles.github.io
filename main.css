@@ -4,6 +4,8 @@
   --text-color: #fffded;
   --accent1-color: #be9c4b;
   --accent2-color: #437597;
+
+    --accent3-color: #e7c678;
 }
 body {
   margin: 0;
@@ -76,3 +78,50 @@ ul li a:hover {
 #austin_about, #truman_about {
     text-align: center;
 }
+
+
+
+
+/*     \/ OUTDOOR ACTIVITIES CSS \/     */
+
+
+.activity-card {
+  margin: 0px 200px 0px 200px;
+  background-color: var(--accent3-color);
+  /* padding: 15px; */
+  border-radius: 20px;
+  overflow: hidden;
+  gap: 20px;
+  /* border: solid 3px var(--primary-color); */
+}
+.activity-card h1 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+.activity-card-two p {
+  margin: 0px 50px 0px 15px;
+  padding-block: 15px;
+  
+}
+img {
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-self: center;
+  /* object-fit: cover;
+  height: 80%; */
+}
+
+.body {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #437597;
+}
+
+
