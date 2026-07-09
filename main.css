@@ -53,3 +53,26 @@ ul li a:hover {
   width: 100%;
   height: auto;
 }
+
+#about_hero {
+    text-align: center;
+}
+
+.about_grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.about_grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.about_grid1 img, .about_grid2 img {
+    max-width: auto;
+    height: 350px;
+}
+#joshua_about, #jonathan_about, #avery_about, 
+#austin_about, #truman_about {
+    text-align: center;
+}
