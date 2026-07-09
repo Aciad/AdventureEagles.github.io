@@ -37,7 +37,59 @@ ul li a {
 ul li a:hover {
   background-color: #ba274a;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
 
+.intro-text {
+  max-width: 950px;
+  margin: 50px 0;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Activity Section Layout */
+.activity-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 950px;
+  width: 100%;
+  padding: 50px 0;
+  border-top: 1px dotted #ccc;
+}
+
+.activity-section:last-of-type {
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 50px;
+}
+
+.activity-section img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #5a8ab1; /* Matches the subtle blue border from the image */
+}
+
+.text-wrapper {
+  flex: 1;
+}
+
+.text-wrapper h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.text-wrapper p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1.05rem;
+}
 .activity-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -55,24 +107,28 @@ ul li a:hover {
 }
 
 #about_hero {
-    text-align: center;
+  text-align: center;
 }
 
 .about_grid1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 .about_grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
-.about_grid1 img, .about_grid2 img {
-    max-width: auto;
-    height: 350px;
+.about_grid1 img,
+.about_grid2 img {
+  max-width: auto;
+  height: 350px;
 }
-#joshua_about, #jonathan_about, #avery_about, 
-#austin_about, #truman_about {
-    text-align: center;
+#joshua_about,
+#jonathan_about,
+#avery_about,
+#austin_about,
+#truman_about {
+  text-align: center;
 }
