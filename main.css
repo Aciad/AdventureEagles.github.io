@@ -83,7 +83,6 @@ main {
   width: 400px;
   height: 250px;
   object-fit: cover;
-  /* border: 2px solid #5a8ab1; /\* Matches the subtle blue border from the image *\/ */
 }
 
 .text-wrapper {
@@ -183,4 +182,13 @@ img {
   flex-direction: column;
   gap: 50px;
   background-color: #437597;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5;
 }
