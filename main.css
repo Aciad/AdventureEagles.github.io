@@ -12,6 +12,9 @@ html {
      All rem-based sizes scale up from this automatically. */
   font-size: 125%;
 }
+#home {
+  background-color: var(--accent2-color);
+}
 body {
   margin: 0;
   padding: 0;
@@ -70,13 +73,18 @@ main {
   padding: 0 20px;
   margin: 0 auto;
   max-width: 950px;
+  gap: 50px;
 }
 
-.intro-text {
+.welcome-text {
   max-width: 950px;
-  margin: 50px 0;
   line-height: 1.6;
+  margin-top: 50px;
   font-size: 1.05rem;
+  background-color: var(--accent3-color);
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* Activity Section Layout */
@@ -87,7 +95,9 @@ main {
   max-width: 950px;
   width: 100%;
   padding: 50px 0;
-  border-top: 1px dotted #ccc;
+  border-top: 1px dotted black;
+  border-radius: 20px;
+  background-color: var(--accent3-color);
 }
 
 .activity-section:last-of-type {
@@ -243,4 +253,101 @@ footer {
   text-align: center;
   padding: 20px;
   line-height: 1.5;
+}
+
+/* =========================================
+   MOBILE MEDIA QUERIES (Max Width: 768px)
+========================================= */
+
+@media (max-width: 768px) {
+  /* --- General & Typography --- */
+  html {
+    /* Slightly scales down the base font size for smaller screens */
+    font-size: 100%;
+  }
+
+  .body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
+  }
+
+  /* --- Navigation --- */
+  nav {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  /* --- Main & Welcome Text --- */
+  main {
+    padding: 0 15px;
+  }
+
+  .welcome-text {
+    padding: 20px 15px;
+    margin-top: 30px;
+  }
+
+  /* --- Activity Sections (Home Page) --- */
+  .activity-section {
+    flex-direction: column; /* Stack image and text vertically */
+    padding: 30px 15px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .activity-section img {
+    width: 100%; /* Prevents fixed 400px from overflowing */
+    height: auto;
+  }
+
+  /* --- Activity Cards (Outdoor Activities Page) --- */
+  .activity-card {
+    /* Removes the massive 200px margins and changes grid to a single column */
+    margin: 0 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .activity-card-one,
+  .activity-card-two,
+  .activity-card iframe {
+    grid-column: 1 / -1; /* Forces elements to span full width of the new single column */
+  }
+
+  .activity-card-two p {
+    margin: 0 15px; /* Removes the 50px right margin */
+    padding-bottom: 25px;
+  }
+
+  /* --- About Page --- */
+  #about_hero h1 {
+    font-size: 2.2rem; /* Prevent huge text from wrapping awkwardly */
+  }
+
+  .team-section {
+    padding: 40px 15px;
+  }
+
+  .team-card {
+    width: 100%; /* Allows it to shrink below 330px on very small phones */
+    max-width: 330px;
+    box-sizing: border-box;
+  }
 }
