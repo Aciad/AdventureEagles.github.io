@@ -7,9 +7,15 @@
 
   --accent3-color: #e7c678;
 }
+html {
+  /* Bigger base text (18px instead of 16px) so everything is easier to read.
+     All rem-based sizes scale up from this automatically. */
+  font-size: 125%;
+}
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 nav {
   display: flex;
@@ -124,8 +130,8 @@ main {
 }
 .activity-card img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 320px;
+  object-fit: cover;
 }
 .activity-card iframe {
   grid-column: 1 / 3;
